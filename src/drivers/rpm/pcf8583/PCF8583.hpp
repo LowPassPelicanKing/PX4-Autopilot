@@ -85,9 +85,13 @@ private:
 	uORB::Publication<rpm_s> _rpm_pub{ORB_ID(rpm)};
 
 	DEFINE_PARAMETERS(
-		(ParamInt<px4::params::PCF8583_ADDR>) _param_pcf8583_addr,
-		(ParamInt<px4::params::PCF8583_POOL>) _param_pcf8583_pool,
-		(ParamInt<px4::params::PCF8583_RESET>) _param_pcf8583_reset,
-		(ParamInt<px4::params::PCF8583_MAGNET>) _param_pcf8583_magnet
+		(ParamInt<px4::params::PCF8583_ADDR_1>) _param_pcf8583_addr_1,
+		(ParamInt<px4::params::PCF8583_ADDR_2>) _param_pcf8583_addr_2,
+		(ParamInt<px4::params::PCF8583_POOL_1>) _param_pcf8583_pool_1,
+		(ParamInt<px4::params::PCF8583_POOL_2>) _param_pcf8583_pool_2,
+		(ParamInt<px4::params::PCF8583_RESET_1>) _param_pcf8583_reset_1,
+		(ParamInt<px4::params::PCF8583_RESET_2>) _param_pcf8583_reset_2,
+		(ParamInt<px4::params::PCF8583_MAGNET_1>) _param_pcf8583_magnet_1,
+		(ParamInt<px4::params::PCF8583_MAGNET_2>) _param_pcf8583_magnet_2
 	)
 };
